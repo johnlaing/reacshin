@@ -4,7 +4,15 @@ HTMLWidgets.widget({
   factory: function(el, width, height) {
     return {
       renderValue: function(x) {
-        alert(x.message);
+        class Hello extends React.Component {
+          render() {
+            return React.createElement('div', null, `Hello, ${this.props.toWhat}!`);
+          };
+        }
+        ReactDOM.render(
+          React.createElement(Hello, x, null),
+          document.getElementById('root')
+        );
       }
     };
   }

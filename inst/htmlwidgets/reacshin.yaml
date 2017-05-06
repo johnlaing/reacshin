@@ -1,6 +1,7 @@
 dependencies:
   - name: reacshin
     version: 0.0.1
-    # src:
+    src: htmlwidgets/lib/react-15
     script:
-      - reacshin.min.js
+      - react.js
+      - react-dom.js
