@@ -1,0 +1,6 @@
+dependencies:
+  - name: reacshin
+    version: 0.0.1
+    # src:
+    script:
+      - reacshin.min.js
