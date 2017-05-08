@@ -5,5 +5,5 @@ Version: 0.0.1
 Date: 2017-05-05
 Author: John Laing
 Maintainer: John Laing <john.laing@gmail.com>
-Description: Stuff
-License: GPL
+Description: Mechanism for adding a reactJS front-end to a Shiny or other R backend
+License: MIT + file LICENSE
