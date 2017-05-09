@@ -1,0 +1,20 @@
+---
+title: "reacshin test"
+output:
+  html_document:
+    theme: null
+---
+
+<script type="application/javascript">
+	class Greeting extends React.Component {
+		render() {
+			return React.createElement('div', null, `Hello, ${this.props.toWhat}!`);
+		};
+	};
+  var components = {"Greeting": Greeting}
+</script>
+
+```{r}
+require(reacshin)
+reacshin("Greeting", list(toWhat="world"))
+```

@@ -20,6 +20,11 @@ An HTML widget
 \description{
 This function creates an HTML widget binding ReactJS and Shiny
 }
+\examples{
+\dontrun{
+  rmarkdown::run(system.file("examples/hello.Rmd", package="reacshin"))
+}
+}
 \author{
 John Laing
 }

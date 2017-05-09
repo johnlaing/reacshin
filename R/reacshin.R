@@ -7,6 +7,10 @@
 ##' @param ... Other parameters passed on to \code{htmlwidgets::createWidget}
 ##' @return An HTML widget
 ##' @author John Laing
+##' @examples
+##' \dontrun{
+##'   rmarkdown::run(system.file("examples/hello.Rmd", package="reacshin"))
+##' }
 
 reacshin <- function(type, data, ...) {
     htmlwidgets::createWidget("reacshin", list(type=type, data=data), ...)

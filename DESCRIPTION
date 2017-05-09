@@ -2,10 +2,12 @@ Package: reacshin
 Type: Package
 Title: react + shiny
 Version: 0.0.1
-Date: 2017-05-05
+Date: 2017-05-09
 Author: John Laing
 Maintainer: John Laing <john.laing@gmail.com>
 Description: Mechanism for adding a reactJS front-end to a Shiny or other R
-    backend
+    backend.
 License: MIT + file LICENSE
+Imports: htmlwidgets
+Suggests: rmarkdown, shiny
 RoxygenNote: 5.0.1
