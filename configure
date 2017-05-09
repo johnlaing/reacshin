@@ -1,0 +1,6 @@
+#!/bin/bash
+
+test -d inst/htmlwidgets/lib/react-15/ || mkdir -p inst/htmlwidgets/lib/react-15/
+
+wget https://unpkg.com/react@15/dist/react.js -O inst/htmlwidgets/lib/react-15/react.js
+wget https://unpkg.com/react-dom@15/dist/react-dom.js -O inst/htmlwidgets/lib/react-15/react-dom.js
