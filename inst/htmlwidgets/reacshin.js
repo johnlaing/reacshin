@@ -2,16 +2,12 @@ HTMLWidgets.widget({
   name: "reacshin",
   type: "output",
   factory: function(el, width, height) {
+    var id = el.id;
     return {
       renderValue: function(x) {
-        class Hello extends React.Component {
-          render() {
-            return React.createElement('div', null, `Hello, ${this.props.toWhat}!`);
-          };
-        }
         ReactDOM.render(
-          React.createElement(Hello, x, null),
-          document.getElementById('root')
+          React.createElement(components[x.type], x.data, null),
+          document.getElementById(id)
         );
       }
     };
